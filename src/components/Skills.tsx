@@ -9,7 +9,7 @@ const skillsData = {
     "React / Vue.js / Angular",
     "Node.js / Express",
     "Python / Django",
-    "RESTful APIs",
+    "RESTful API",
     "AWS / Azure / GCP",
     "Docker / Kubernetes",
     "CI/CD Pipelines",
