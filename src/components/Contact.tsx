@@ -1,8 +1,5 @@
 
-import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Mail, MapPin, Phone } from "lucide-react";
 import Section from "./Section";
 
@@ -18,42 +15,9 @@ const Contact = () => {
         </p>
       </div>
 
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
-        {/* Contact Form */}
-        <Card className="animate-fade-in-right">
-          <CardHeader>
-            <CardTitle>Send Me a Message</CardTitle>
-            <CardDescription>
-              I'll get back to you as soon as possible.
-            </CardDescription>
-          </CardHeader>
-          <CardContent>
-            <form className="space-y-4">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                <div className="space-y-2">
-                  <Input type="text" placeholder="Your Name" />
-                </div>
-                <div className="space-y-2">
-                  <Input type="email" placeholder="Your Email" />
-                </div>
-              </div>
-              <div className="space-y-2">
-                <Input type="text" placeholder="Subject" />
-              </div>
-              <div className="space-y-2">
-                <Textarea placeholder="Your Message" className="min-h-[120px]" />
-              </div>
-            </form>
-          </CardContent>
-          <CardFooter>
-            <Button className="w-full bg-accent hover:bg-accent/90 text-white">
-              Send Message
-            </Button>
-          </CardFooter>
-        </Card>
-
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center justify-center max-w-4xl mx-auto">
         {/* Contact Information */}
-        <div className="space-y-6 animate-fade-in-left">
+        <div className="space-y-6 animate-fade-in-left w-full">
           <Card>
             <CardHeader>
               <CardTitle>Contact Information</CardTitle>
