@@ -1,6 +1,7 @@
 
 import { cn } from "@/lib/utils";
 import Section from "./Section";
+import { Avatar, AvatarFallback, AvatarImage } from "./ui/avatar";
 
 const timelineItems = [
   {
@@ -9,6 +10,8 @@ const timelineItems = [
     company: "TechInnovate Inc.",
     description:
       "Lead developer for AI-driven analytics platform. Managed a team of 5 engineers using Agile methodologies.",
+    image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b",
+    logo: "TI"
   },
   {
     year: "2020 - 2022",
@@ -16,6 +19,8 @@ const timelineItems = [
     company: "Digital Solutions Co.",
     description:
       "Developed scalable web applications while serving as Scrum Master for cross-functional team.",
+    image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6",
+    logo: "DS"
   },
   {
     year: "2018 - 2020",
@@ -23,6 +28,8 @@ const timelineItems = [
     company: "WebTech Systems",
     description:
       "Built RESTful APIs and implemented front-end features for enterprise clients.",
+    image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d",
+    logo: "WS"
   },
   {
     year: "2017",
@@ -30,6 +37,8 @@ const timelineItems = [
     company: "Tech University",
     description:
       "Bachelor's degree in Computer Science with focus on software engineering.",
+    image: "https://images.unsplash.com/photo-1605810230434-7631ac76ec81",
+    logo: "TU"
   },
 ];
 
@@ -45,63 +54,53 @@ const Timeline = () => {
         </p>
       </div>
 
-      <div className="relative">
+      <div className="relative max-w-5xl mx-auto">
         {/* Timeline line */}
-        <div className="hidden md:block absolute left-1/2 h-full w-0.5 bg-border -translate-x-1/2 z-0"></div>
+        <div className="hidden md:block absolute left-1/2 h-full w-0.5 bg-[#001f54]/20 -translate-x-1/2 z-0"></div>
 
         {/* Timeline items */}
-        <div className="space-y-8 md:space-y-0 relative z-10">
+        <div className="space-y-16 md:space-y-24 relative z-10">
           {timelineItems.map((item, index) => (
             <div key={index} className="relative">
               <div
                 className={cn(
-                  "flex flex-col md:flex-row gap-8 md:gap-0 items-start",
-                  index % 2 === 0 ? "md:justify-end" : "md:justify-start"
+                  "flex flex-col md:flex-row items-center gap-8",
+                  index % 2 === 0 ? "md:flex-row-reverse" : ""
                 )}
               >
-                {/* Year - only show on left for even items on desktop */}
-                {index % 2 === 0 && (
-                  <div className="hidden md:block w-[45%] text-right pr-8 animate-fade-in-left">
-                    <span className="inline-block bg-accent text-white px-4 py-1 rounded-full text-sm font-semibold">
-                      {item.year}
-                    </span>
-                  </div>
-                )}
-
-                {/* Central dot */}
-                <div className="hidden md:flex absolute left-1/2 -translate-x-1/2 top-1 w-4 h-4 rounded-full bg-accent border-4 border-background"></div>
-
-                {/* Year - mobile only */}
-                <div className="md:hidden">
-                  <span className="inline-block bg-accent text-white px-4 py-1 rounded-full text-sm font-semibold">
+                {/* Year */}
+                <div className="absolute top-0 left-1/2 -translate-x-1/2 md:static md:translate-x-0 mb-4 md:mb-0 md:flex-1 md:text-right">
+                  <span className="inline-block bg-[#001f54] text-white px-6 py-2 rounded-full text-lg font-semibold shadow-md">
                     {item.year}
                   </span>
                 </div>
 
-                {/* Content */}
-                <div
-                  className={cn(
-                    "bg-card border rounded-lg p-6 shadow-sm w-full",
-                    index % 2 === 0
-                      ? "md:w-[45%] md:pl-8 animate-fade-in-right"
-                      : "md:w-[45%] md:pl-8 animate-fade-in-left"
-                  )}
-                >
-                  <h3 className="text-xl font-bold">{item.title}</h3>
-                  <p className="text-accent font-medium">{item.company}</p>
-                  <p className="mt-2 text-muted-foreground">
-                    {item.description}
-                  </p>
+                {/* Central dot & logo */}
+                <div className="hidden md:flex absolute left-1/2 -translate-x-1/2">
+                  <Avatar className="w-12 h-12 border-4 border-background shadow-md bg-[#001f54] text-white">
+                    <AvatarFallback>{item.logo}</AvatarFallback>
+                  </Avatar>
                 </div>
 
-                {/* Year - only show on right for odd items on desktop */}
-                {index % 2 !== 0 && (
-                  <div className="hidden md:block w-[45%] pl-8 animate-fade-in-right">
-                    <span className="inline-block bg-accent text-white px-4 py-1 rounded-full text-sm font-semibold">
-                      {item.year}
-                    </span>
+                {/* Content */}
+                <div className="flex-1">
+                  <div className="bg-card border rounded-lg shadow-md overflow-hidden">
+                    <div className="aspect-video w-full overflow-hidden">
+                      <img 
+                        src={item.image} 
+                        alt={item.title}
+                        className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                      />
+                    </div>
+                    <div className="p-6">
+                      <h3 className="text-xl font-bold text-[#001f54]">{item.title}</h3>
+                      <p className="text-accent font-medium mb-2">{item.company}</p>
+                      <p className="text-muted-foreground">
+                        {item.description}
+                      </p>
+                    </div>
                   </div>
-                )}
+                </div>
               </div>
             </div>
           ))}
