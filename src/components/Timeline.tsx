@@ -9,8 +9,7 @@ const timelineItems = [
     company: "TechInnovate Inc.",
     description:
       "Lead developer for AI-driven analytics platform. Managed a team of 5 engineers using Agile methodologies.",
-    image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b",
-    logo: "TI"
+    logo: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?w=200&h=200&fit=crop&q=80"
   },
   {
     year: "2020 - 2022",
@@ -18,26 +17,32 @@ const timelineItems = [
     company: "Digital Solutions Co.",
     description:
       "Developed scalable web applications while serving as Scrum Master for cross-functional team.",
-    image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6",
-    logo: "DS"
+    logo: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=200&h=200&fit=crop&q=80"
   },
   {
-    year: "2018 - 2020",
-    title: "Software Developer",
-    company: "WebTech Systems",
+    year: "2018",
+    title: "Software Engineering Intern",
+    company: "Commude Philippines",
     description:
       "Built RESTful APIs and implemented front-end features for enterprise clients.",
-    image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d",
-    logo: "WS"
+    logo: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=200&h=200&fit=crop&q=80"
   },
   {
-    year: "2017",
+    year: "2018",
     title: "Computer Science Degree",
-    company: "Tech University",
-    description:
-      "Bachelor's degree in Computer Science with focus on software engineering.",
-    image: "https://images.unsplash.com/photo-1605810230434-7631ac76ec81",
-    logo: "TU"
+    company: "Mapua University",
+    description: (
+      <div className="space-y-2">
+        <p>Bachelor's degree in Computer Science with focus on software engineering.</p>
+        <ul className="list-disc list-inside space-y-1">
+          <li>Full Academic Scholarship Awardee (2nd and 3rd term, S.Y. 2015 - 2016)</li>
+          <li className="ml-4">- Had an average grade of not less than 1.25 for the previous quarter</li>
+          <li>Half Academic Scholarship Awardee (4th term, S.Y. 2015 - 2016)</li>
+          <li className="ml-4">- Had an average grade of not less than 1.75 for the previous quarter</li>
+        </ul>
+      </div>
+    ),
+    logo: "https://pbs.twimg.com/profile_images/1651793415242420224/dpijBolq_400x400.png"
   },
 ];
 
@@ -69,28 +74,22 @@ const Timeline = () => {
               >
                 {/* Year */}
                 <div className="absolute top-0 left-1/2 -translate-x-1/2 md:static md:translate-x-0 mb-4 md:mb-0 md:flex-1 md:text-right">
-                  <span className="inline-block bg-[#001f54] text-white px-6 py-2 rounded-full text-lg font-semibold shadow-md">
+                  {/* <span className="inline-block bg-[#001f54] text-white px-6 py-2 rounded-full text-lg font-semibold shadow-md">
                     {item.year}
-                  </span>
+                  </span> */}
                 </div>
 
                 {/* Central dot & logo */}
                 <div className="hidden md:flex absolute left-1/2 -translate-x-1/2">
-                  <Avatar className="w-12 h-12 border-4 border-background shadow-md bg-[#001f54] text-white">
-                    <AvatarFallback>{item.logo}</AvatarFallback>
+                  <Avatar className="w-20 h-20 border-4 border-background shadow-lg">
+                    <AvatarImage src={item.logo} alt={item.company} />
+                    <AvatarFallback>{item.company.substring(0, 2)}</AvatarFallback>
                   </Avatar>
                 </div>
 
                 {/* Content */}
                 <div className="flex-1">
                   <div className="bg-card border rounded-lg shadow-md overflow-hidden">
-                    <div className="aspect-video w-full overflow-hidden">
-                      <img 
-                        src={item.image} 
-                        alt={item.title}
-                        className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
-                      />
-                    </div>
                     <div className="p-6">
                       <div className="flex items-center gap-2 mb-2">
                         <h3 className="text-xl font-bold text-[#001f54]">{item.title}</h3>
