@@ -14,10 +14,10 @@ const Footer = () => {
               href="#hero"
               className="text-xl font-extrabold tracking-tighter gradient-text"
             >
-              portfolio<span className="text-accent">.</span>
+              Arvin Alipio Portfolio<span className="text-accent">.</span>
             </a>
             <p className="text-muted-foreground text-sm mt-2">
-              © {currentYear} Jane Doe. All rights reserved.
+              © {currentYear} Arvin Alipio. All rights reserved.
             </p>
           </div>
 

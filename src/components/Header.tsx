@@ -40,7 +40,7 @@ const Header = () => {
             href="#hero"
             className="text-xl md:text-2xl font-extrabold tracking-tighter gradient-text"
           >
-            portfolio<span className="text-accent">.</span>
+           Arvin Alipio Portfolio<span className="text-accent">.</span>
           </a>
 
           {/* Desktop Menu */}

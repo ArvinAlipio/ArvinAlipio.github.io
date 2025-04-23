@@ -71,7 +71,11 @@ const Contact = () => {
             <div className="h-full w-full bg-gradient-to-br from-accent/20 to-blue-500/20 rounded-2xl overflow-hidden">
               <div className="h-full w-full flex items-center justify-center text-accent">
                 <div className="w-full h-full bg-muted flex items-center justify-center">
-                  <span className="text-4xl font-bold">JD</span>
+                  <img 
+                    src="https://scontent.fmnl17-8.fna.fbcdn.net/v/t39.30808-6/250085161_4697312580289883_6176329537119147344_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=d6I566l4wBwQ7kNvwG-jwDQ&_nc_oc=AdnWF9GFjCEm1KBdrF6fHe0YUh_7IUHmvji-AdoB-WOHhCVzie_Ih6JUYDqvGtha8Z0&_nc_zt=23&_nc_ht=scontent.fmnl17-8.fna&_nc_gid=_2aUd41EUSPCUwjr4625bw&oh=00_AfE_9TRydoOXyQRSWAEHewBHzfF4Ssmi2VIMpo85wbGmyg&oe=680F13A8" 
+                    alt="Profile picture"
+                    className="w-full h-full object-cover"
+                  />
                 </div>
               </div>
             </div>

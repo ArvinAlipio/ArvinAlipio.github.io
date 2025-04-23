@@ -1,4 +1,3 @@
-
 import { cn } from "@/lib/utils";
 import Section from "./Section";
 import { Avatar, AvatarFallback, AvatarImage } from "./ui/avatar";
@@ -93,7 +92,11 @@ const Timeline = () => {
                       />
                     </div>
                     <div className="p-6">
-                      <h3 className="text-xl font-bold text-[#001f54]">{item.title}</h3>
+                      <div className="flex items-center gap-2 mb-2">
+                        <h3 className="text-xl font-bold text-[#001f54]">{item.title}</h3>
+                        <span className="text-muted-foreground">•</span>
+                        <span className="text-accent font-medium">{item.year}</span>
+                      </div>
                       <p className="text-accent font-medium mb-2">{item.company}</p>
                       <p className="text-muted-foreground">
                         {item.description}
