@@ -10,7 +10,7 @@ const Hero = () => {
       <div className="relative z-10 text-center max-w-3xl mx-auto px-6 animate-fade-in">
         <p className="text-accent font-medium mb-3">Hello, I'm</p>
         <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">
-          Arvin Alipio
+          Arvin Alipiofdfsfdfsd
         </h1>
         <h2 className="text-2xl md:text-3xl font-medium text-muted-foreground mb-6">
           Software Engineer & Agile PM
