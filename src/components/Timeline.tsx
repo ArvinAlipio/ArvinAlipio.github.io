@@ -4,28 +4,78 @@ import { Avatar, AvatarFallback, AvatarImage } from "./ui/avatar";
 
 const timelineItems = [
   {
-    year: "2022 - Present",
-    title: "Senior Software Engineer",
-    company: "TechInnovate Inc.",
-    description:
-      "Lead developer for AI-driven analytics platform. Managed a team of 5 engineers using Agile methodologies.",
-    logo: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?w=200&h=200&fit=crop&q=80"
+    year: "2023",
+    title: "Application Development Senior Analyst",
+    company: "Accenture",
+    description: (
+      <div className="space-y-2">
+        <p>Finally, after more than a year I decided to move again and take a leap of faith to look for better opportunities with regards to my career, now, I am currently working as an Application Development Senior Analyst in Accenture.</p>
+        <p>My role involves working with a variety of clients with regards to full stack development efforts, conducting thorough code reviews to maintain code quality, and following test-driven development practices to ensure reliability. In addition to my development work, I also take part in Agile project management, acting as an SME with regards to Agile methodologies to help continuously improve delivery process.</p>
+      </div>
+    ),
+    logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqJpgQxCXa_ut0bLFycTpPzoQXnYvgedz1Lg&s?w=200&h=200&fit=crop&q=80"
   },
   {
-    year: "2020 - 2022",
-    title: "Full Stack Developer & Scrum Master",
-    company: "Digital Solutions Co.",
-    description:
-      "Developed scalable web applications while serving as Scrum Master for cross-functional team.",
-    logo: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=200&h=200&fit=crop&q=80"
+    year: "2021",
+    title: "Senior Full Stack Developer & Process Automation Developer",
+    company: "DBC Philippines",
+    description: (
+      <div className="space-y-2">
+        <p>After more than a year, I decided to push my career forward again and moved to a new company as a Senior Full Stack and Process Automation Developer.</p>
+        <p>In this role, I worked as part of an Agile team specializing in Full Stack Web Development, with our projects centered on streamlining and enhancing conveyancing processes in the real estate industry.</p>
+        <p>In parallel with my Full Stack Web Development role, I was also part of a dedicated team that spearheaded the automation of conveyancing processes using Azure services—helping streamline complex workflows and improve operational efficiency in the real estate domain.</p>
+      </div>
+    ),
+    logo: "https://media.glassdoor.com/sqll/5352089/dbc-philippines-squareLogo-1658877747906.png?w=200&h=200&fit=crop&q=80"
+  },
+  {
+    year: "2020",
+    title: "Software Engineer",
+    company: "Cambridge University Press and Assessment",
+    description: (
+      <div className="space-y-2">
+        <p>After more than a year I decided to move to a company wherein I feel that I can be impactful not only within the company but to a wider community, and so I moved and started working as a Software Engineer in Cambridge University Press back in 2020.</p>
+        <p>My role mainly includes collaborating with a team of software engineers and deliver tasks with regards to web development, I also participate in team meetings wherein I am a part of a great team of professionals who follows the Agile methodology of project management.</p>
+      </div>
+    ),
+    logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCAjWN1Lk21MLAU12aLVRQ0BI5RvBPdy77hQ&s?w=200&h=200&fit=crop&q=80"
+  },
+  {
+    year: "2019",
+    title: "Full-Stack Web Developer & SAP Basis Administrator",
+    company: "DXC Technology",
+    description: (
+      <div className="space-y-2">
+        <p>Moved to a different company after more than a year of experience and transferred to DXC Technology as a Full-stack web developer and SAP Basis adminitrator.</p>
+        <p>My role included spearheading the development of the new Knowledge Management System used by the company's employees which greatly widened my horizons with regards to web development, my role also included the maintenance of the old KMS while the updated version is being developed.</p>
+        <p>Another role that I was given in parallel with the full-stack web development role is with regards to SAP Basis administration, wherein I was part of the support team of SAP Basis Admins that resolves various SAP issues of our partner accounts.</p>
+      </div>
+    ),
+    logo: "https://upload.wikimedia.org/wikipedia/commons/7/73/DXC_Tech.png?w=200&h=200&fit=crop&q=80"
+  },
+  {
+    year: "2018",
+    title: "Software Engineer",
+    company: "Commude Philippines",
+    description: (
+      <div className="space-y-2">
+        <p>After 5 months of internship I was absorbed by the company wherein I am having my internship and I was offered a full-time position of Software Engineer with focus to back-end web development.</p>
+        <p>My roles and responsibilities have expanded upon employment as a regular employee. I experienced facilitating stand-up meetings, deploying web applications to the server, I also experienced mentoring and training interns with regards to back-end web development.</p>
+      </div>
+    ),
+    logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTb6d17TimSc69vKXnkDP53LO5xgJkLELJFHQ&s?w=200&h=200&fit=crop&q=80"
   },
   {
     year: "2018",
     title: "Software Engineering Intern",
     company: "Commude Philippines",
-    description:
-      "Built RESTful APIs and implemented front-end features for enterprise clients.",
-    logo: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=200&h=200&fit=crop&q=80"
+    description: (
+      <div className="space-y-2">
+        <p>My very first job experience came from a Japanese company named Commude Philippines, wherein I learned and established my knowledge with regards to Back-End web development especially with regards to the MVC framework.</p>
+        <p>I also participate in the company's employees team meetings, and I also had a responsibility of guiding fellow interns with regards to Back-end web development, and testing of developed web applications.</p>
+      </div>
+    ),
+    logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTb6d17TimSc69vKXnkDP53LO5xgJkLELJFHQ&s?w=200&h=200&fit=crop&q=80"
   },
   {
     year: "2018",

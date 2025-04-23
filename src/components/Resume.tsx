@@ -24,16 +24,16 @@ const Resume = () => {
           
           <div className="mt-8 pt-8 border-t grid grid-cols-3 gap-4 text-center">
             <div>
-              <h3 className="text-3xl font-bold text-accent">8+</h3>
+              <h3 className="text-3xl font-bold text-accent">7+</h3>
               <p className="text-sm text-muted-foreground">Years Experience</p>
             </div>
             <div>
-              <h3 className="text-3xl font-bold text-accent">50+</h3>
-              <p className="text-sm text-muted-foreground">Projects Completed</p>
+              <h3 className="text-3xl font-bold text-accent">100+</h3>
+              <p className="text-sm text-muted-foreground">Sprints Completed</p>
             </div>
             <div>
               <h3 className="text-3xl font-bold text-accent">15+</h3>
-              <p className="text-sm text-muted-foreground">Satisfied Clients</p>
+              <p className="text-sm text-muted-foreground">Handled Projects</p>
             </div>
           </div>
         </div>

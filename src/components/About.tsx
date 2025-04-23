@@ -36,7 +36,7 @@ const About = () => {
           <div className="space-y-4 text-lg">
             <p>
               I'm a passionate Software Engineer and Agile Project Management 
-              Practitioner with over 8 years of experience building robust applications 
+              Practitioner with over 7 years of experience building robust applications 
               and leading development teams.
             </p>
             
