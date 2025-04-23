@@ -15,9 +15,9 @@ const Contact = () => {
         </p>
       </div>
 
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center justify-center max-w-4xl mx-auto">
+      <div className="flex flex-col md:flex-row gap-12 items-center max-w-6xl mx-auto">
         {/* Contact Information */}
-        <div className="space-y-6 animate-fade-in-left w-full">
+        <div className="w-full md:w-1/2 space-y-6 animate-fade-in-left">
           <Card>
             <CardHeader>
               <CardTitle>Contact Information</CardTitle>
@@ -63,9 +63,30 @@ const Contact = () => {
             </CardContent>
           </Card>
         </div>
+
+        {/* Image Section */}
+        <div className="w-full md:w-1/2 animate-fade-in-right relative">
+          <div className="aspect-square max-w-md mx-auto relative">
+            <div className="absolute inset-0 rounded-2xl border-2 border-accent/20 transform rotate-6"></div>
+            <div className="h-full w-full bg-gradient-to-br from-accent/20 to-blue-500/20 rounded-2xl overflow-hidden">
+              <div className="h-full w-full flex items-center justify-center text-accent">
+                <div className="w-full h-full bg-muted flex items-center justify-center">
+                  <span className="text-4xl font-bold">JD</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          {/* Code snippet decoration */}
+          <div className="absolute -bottom-4 -right-4 bg-card p-3 rounded-md shadow-lg border rotate-3 hidden md:block">
+            <pre className="text-xs text-muted-foreground">
+              <code>{'const connect = async () => {\n  await sayHello();\n}'}</code>
+            </pre>
+          </div>
+        </div>
       </div>
     </Section>
   );
 };
 
 export default Contact;
+
