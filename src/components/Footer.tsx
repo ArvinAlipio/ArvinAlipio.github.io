@@ -1,4 +1,3 @@
-
 import { Github, Linkedin, Twitter } from "lucide-react";
 
 const Footer = () => {
@@ -23,15 +22,33 @@ const Footer = () => {
 
           {/* Social Links */}
           <div className="flex space-x-4 mb-6 md:mb-0">
-            <a href="https://github.com" className="text-foreground hover:text-accent transition-colors" aria-label="GitHub">
+            <a 
+              href="https://github.com/arvinalipio" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-foreground hover:text-accent transition-colors" 
+              aria-label="GitHub"
+            >
               <Github size={20} />
             </a>
-            <a href="https://linkedin.com" className="text-foreground hover:text-accent transition-colors" aria-label="LinkedIn">
+            <a 
+              href="https://www.linkedin.com/in/arvin-alipio-b06b78143/" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-foreground hover:text-accent transition-colors" 
+              aria-label="LinkedIn"
+            >
               <Linkedin size={20} />
             </a>
-            <a href="https://twitter.com" className="text-foreground hover:text-accent transition-colors" aria-label="Twitter">
+            {/* <a 
+              href="https://twitter.com" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-foreground hover:text-accent transition-colors" 
+              aria-label="Medium"
+            >
               <Twitter size={20} />
-            </a>
+            </a> */}
           </div>
 
           {/* Back to top */}

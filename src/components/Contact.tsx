@@ -57,7 +57,7 @@ const Contact = () => {
             <CardContent className="pt-6">
               <h3 className="text-xl font-semibold mb-2">Currently Available</h3>
               <p className="opacity-90">
-                I'm currently available for freelance work and full-time positions. 
+                I'm currently available for freelance work. 
                 Let's discuss how I can help with your project!
               </p>
             </CardContent>

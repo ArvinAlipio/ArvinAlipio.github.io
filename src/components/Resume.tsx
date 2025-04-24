@@ -1,9 +1,18 @@
-
 import { Button } from "@/components/ui/button";
 import { Download } from "lucide-react";
 import Section from "./Section";
 
 const Resume = () => {
+  const handleDownload = () => {
+    // Create a link element
+    const link = document.createElement('a');
+    link.href = '/ArvinAlipio_Resume.pdf';
+    link.download = 'Arvin_Alipio_Resume.pdf'; // This will be the filename when downloaded
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   return (
     <Section id="resume" className="bg-accent/5">
       <div className="relative mx-auto max-w-3xl">
@@ -18,7 +27,11 @@ const Resume = () => {
             Get a comprehensive overview of my experience, skills, and qualifications in a downloadable PDF format.
           </p>
           
-          <Button size="lg" className="bg-accent hover:bg-accent/90 text-white">
+          <Button 
+            size="lg" 
+            className="bg-accent hover:bg-accent/90 text-white"
+            onClick={handleDownload}
+          >
             <Download className="mr-2 h-5 w-5" /> Download Resume
           </Button>
           

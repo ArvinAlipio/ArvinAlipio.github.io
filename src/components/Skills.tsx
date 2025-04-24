@@ -6,9 +6,9 @@ import Section from "./Section";
 const skillsData = {
   technical: [
     "Full-Stack Development",
-    "React / Vue.js / Angular",
+    "React / Vue.js",
     "Node.js / Express",
-    "Python / Django",
+    "PHP Laravel",
     "RESTful APIs",
     "AWS / Azure / GCP",
     "Docker / Kubernetes",
@@ -19,9 +19,9 @@ const skillsData = {
     "Performance Optimization",
   ],
   agile: [
-    "Scrum Master Certified",
-    "Agile Transformation",
-    "Sprint Planning",
+    "Professional Scrum Master 1 Certified",
+    "Agile Leadership",
+    "Scrum Ceremonies",
     "Backlog Management",
     "Team Leadership",
     "Stakeholder Management",
@@ -36,8 +36,6 @@ const skillsData = {
     "Web Application Development",
     "API Design & Integration",
     "Technology Consultation",
-    "Cloud Migration",
-    "DevOps Implementation",
     "Agile Coaching",
     "Software Architecture",
     "Performance Optimization",
@@ -45,6 +43,8 @@ const skillsData = {
     "Code Review & Mentoring",
     "System Integration",
     "AI Solution Design",
+    "AI Automation",
+    "AI Agent Development",
   ],
 };
 
