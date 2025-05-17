@@ -12,7 +12,7 @@ const About = () => {
             <div className="h-full w-full bg-gradient-to-br from-accent/20 to-blue-500/20 rounded-2xl overflow-hidden">
               <div className="h-full w-full flex items-center justify-center text-accent">
                 <img 
-                  src="https://scontent.fmnl17-5.fna.fbcdn.net/v/t39.30808-6/466079797_8916545358366563_5519284089125003679_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=a5f93a&_nc_ohc=wrVaah5vXOIQ7kNvwEwS68s&_nc_oc=AdnJBYFcerAWLUNt_9nKQ8jkrXc7sJoILexY6Dukf9CAcBmRS1e4GK-NuxtDxGmZtVk&_nc_zt=23&_nc_ht=scontent.fmnl17-5.fna&_nc_gid=vqOH-Gs-Tuh2DAzc5QEkjw&oh=00_AfHpS7KdribhjEYfA2T8iB5GLGGNzwtsSmrEcVPaAtlYog&oe=680F3D1D" 
+                  src="/profile_photo_1.jpg" 
                   alt="Profile picture"
                   className="w-full h-full object-cover"
                 />
